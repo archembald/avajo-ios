@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:../avajo-ios/FBSettings.m">
+   </FileRef>
+   <FileRef
       location = "self:avajo-ios.xcodeproj">
    </FileRef>
 </Workspace>
