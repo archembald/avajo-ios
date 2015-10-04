@@ -52,7 +52,9 @@ class LoginView: UIViewController, FBSDKLoginButtonDelegate {
     }
     
     func goToMainView(){
-        performSegueWithIdentifier("loginSegue", sender: self)
+        dispatch_async(dispatch_get_main_queue()) {
+            self.performSegueWithIdentifier("loginSegue", sender: self)
+        }
     }
     
     func returnUserData()

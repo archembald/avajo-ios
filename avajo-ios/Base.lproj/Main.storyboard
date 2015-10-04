@@ -31,14 +31,14 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NqM-n0-Iex">
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NqM-n0-Iex">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                 <animations/>
                                 <items>
                                     <navigationItem title="Nearby" id="W1c-bs-RV1"/>
                                 </items>
                             </navigationBar>
-                            <searchBar contentMode="redraw" fixedFrame="YES" text="" translatesAutoresizingMaskIntoConstraints="NO" id="avO-fI-o2v">
+                            <searchBar contentMode="redraw" text="" translatesAutoresizingMaskIntoConstraints="NO" id="avO-fI-o2v">
                                 <rect key="frame" x="0.0" y="44" width="600" height="44"/>
                                 <animations/>
                                 <textInputTraits key="textInputTraits"/>
@@ -47,10 +47,16 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="avO-fI-o2v" firstAttribute="centerX" secondItem="KQZ-1w-vlD" secondAttribute="centerX" id="0eV-rw-2pr"/>
                             <constraint firstAttribute="centerX" secondItem="KQZ-1w-vlD" secondAttribute="centerX" id="6BV-lF-sBN"/>
+                            <constraint firstItem="NqM-n0-Iex" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="Jz8-qW-diI"/>
+                            <constraint firstItem="NqM-n0-Iex" firstAttribute="trailing" secondItem="avO-fI-o2v" secondAttribute="trailing" id="RPd-iS-IaP"/>
+                            <constraint firstItem="avO-fI-o2v" firstAttribute="top" secondItem="NqM-n0-Iex" secondAttribute="bottom" id="YBp-Vc-mzk"/>
                             <constraint firstItem="A5M-7J-77L" firstAttribute="top" secondItem="KQZ-1w-vlD" secondAttribute="bottom" constant="8" symbolic="YES" id="cfb-er-3JN"/>
                             <constraint firstItem="A5M-7J-77L" firstAttribute="centerX" secondItem="KQZ-1w-vlD" secondAttribute="centerX" id="e1l-AV-tCB"/>
                             <constraint firstAttribute="centerY" secondItem="KQZ-1w-vlD" secondAttribute="centerY" id="exm-UA-ej4"/>
+                            <constraint firstItem="avO-fI-o2v" firstAttribute="leading" secondItem="NqM-n0-Iex" secondAttribute="leading" id="fgQ-yp-6ff"/>
+                            <constraint firstItem="NqM-n0-Iex" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="top" id="qku-Vp-PwU"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
@@ -88,14 +94,14 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cIF-km-eVh">
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cIF-km-eVh">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                 <animations/>
                                 <items>
                                     <navigationItem title="Hangouts" id="31o-41-DwQ"/>
                                 </items>
                             </navigationBar>
-                            <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pZ7-w2-dyO">
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="pZ7-w2-dyO">
                                 <rect key="frame" x="0.0" y="44" width="600" height="44"/>
                                 <animations/>
                                 <textInputTraits key="textInputTraits"/>
@@ -107,8 +113,14 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="cIF-km-eVh" firstAttribute="top" secondItem="QS5-Rx-YEW" secondAttribute="top" id="5gB-BI-0Fg"/>
                             <constraint firstItem="NDk-cv-Gan" firstAttribute="top" secondItem="zEq-FU-wV5" secondAttribute="bottom" constant="8" symbolic="YES" id="Day-4N-Vmt"/>
+                            <constraint firstItem="pZ7-w2-dyO" firstAttribute="trailing" secondItem="cIF-km-eVh" secondAttribute="trailing" id="EZV-T3-KCH"/>
                             <constraint firstItem="NDk-cv-Gan" firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="JgO-Fn-dHn"/>
+                            <constraint firstItem="pZ7-w2-dyO" firstAttribute="leading" secondItem="cIF-km-eVh" secondAttribute="leading" id="Uqn-N7-Unq"/>
+                            <constraint firstItem="pZ7-w2-dyO" firstAttribute="top" secondItem="cIF-km-eVh" secondAttribute="bottom" id="aaZ-YK-OQW"/>
+                            <constraint firstItem="cIF-km-eVh" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" id="gSk-VB-ke2"/>
+                            <constraint firstItem="pZ7-w2-dyO" firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="lni-HQ-Lsv"/>
                             <constraint firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="qqM-NS-xev"/>
                             <constraint firstAttribute="centerY" secondItem="zEq-FU-wV5" secondAttribute="centerY" id="qzY-Ky-pLD"/>
                         </constraints>
@@ -133,7 +145,7 @@
             </objects>
             <point key="canvasLocation" x="750" y="360"/>
         </scene>
-        <!--Login View-->
+        <!--Item-->
         <scene sceneID="ZBT-p3-AcB">
             <objects>
                 <viewController id="DN8-3W-2DS" customClass="LoginView" customModule="avajo_ios" customModuleProvider="target" sceneMemberID="viewController">
@@ -163,7 +175,7 @@
                                 <rect key="frame" x="0.0" y="508" width="600" height="92"/>
                                 <animations/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="92" id="cdy-6A-NCR"/>
+                                    <constraint firstAttribute="height" constant="92" id="gGX-ci-a3S"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -173,8 +185,8 @@
                                 <rect key="frame" x="224" y="84" width="153" height="51"/>
                                 <animations/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="153" id="Ig5-Vd-2e5"/>
-                                    <constraint firstAttribute="height" constant="51" id="qJh-t0-cea"/>
+                                    <constraint firstAttribute="width" constant="153" id="EsU-94-cd7"/>
+                                    <constraint firstAttribute="height" constant="51" id="S4m-TT-qlc"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <color key="textColor" red="1" green="0.33305177536499975" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -182,21 +194,22 @@
                             </label>
                         </subviews>
                         <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.99281742307306142" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="OWc-Dt-IdC" firstAttribute="centerX" secondItem="cVz-8p-8lz" secondAttribute="centerX" id="0vJ-aa-0zT"/>
-                            <constraint firstAttribute="trailing" secondItem="Ll1-w4-ft2" secondAttribute="trailing" id="3Ij-gf-kMp"/>
-                            <constraint firstItem="Ll1-w4-ft2" firstAttribute="bottom" secondItem="4J6-5c-UHK" secondAttribute="top" id="C1T-yo-Ma3"/>
-                            <constraint firstItem="cVz-8p-8lz" firstAttribute="centerX" secondItem="bqp-8b-kQe" secondAttribute="centerX" id="SwK-SJ-dSf"/>
-                            <constraint firstItem="OWc-Dt-IdC" firstAttribute="centerY" secondItem="3RZ-Lh-rGf" secondAttribute="centerY" id="Vk7-6a-aGy"/>
-                            <constraint firstItem="Ll1-w4-ft2" firstAttribute="leading" secondItem="3RZ-Lh-rGf" secondAttribute="leading" id="Wiv-nv-BOs"/>
-                            <constraint firstItem="OWc-Dt-IdC" firstAttribute="centerX" secondItem="Ll1-w4-ft2" secondAttribute="centerX" id="jpn-mB-6nc"/>
-                            <constraint firstItem="bqp-8b-kQe" firstAttribute="top" secondItem="Egc-B5-ydi" secondAttribute="bottom" constant="64" id="nnQ-Nm-K4L"/>
-                            <constraint firstItem="cVz-8p-8lz" firstAttribute="top" secondItem="bqp-8b-kQe" secondAttribute="bottom" constant="8" symbolic="YES" id="z8r-40-JSm"/>
+                            <constraint firstItem="Ll1-w4-ft2" firstAttribute="leading" secondItem="3RZ-Lh-rGf" secondAttribute="leading" id="0Db-K4-Cc2"/>
+                            <constraint firstItem="cVz-8p-8lz" firstAttribute="centerX" secondItem="bqp-8b-kQe" secondAttribute="centerX" id="Edm-SQ-fje"/>
+                            <constraint firstItem="OWc-Dt-IdC" firstAttribute="centerX" secondItem="cVz-8p-8lz" secondAttribute="centerX" id="L1u-Qa-lT4"/>
+                            <constraint firstItem="cVz-8p-8lz" firstAttribute="top" secondItem="bqp-8b-kQe" secondAttribute="bottom" constant="8" symbolic="YES" id="XFV-Xq-syU"/>
+                            <constraint firstItem="Ll1-w4-ft2" firstAttribute="bottom" secondItem="4J6-5c-UHK" secondAttribute="top" id="kob-bX-QuI"/>
+                            <constraint firstAttribute="trailing" secondItem="Ll1-w4-ft2" secondAttribute="trailing" id="mMu-Rt-SNB"/>
+                            <constraint firstItem="bqp-8b-kQe" firstAttribute="top" secondItem="Egc-B5-ydi" secondAttribute="bottom" constant="64" id="rrP-U9-eaR"/>
+                            <constraint firstItem="Ll1-w4-ft2" firstAttribute="centerX" secondItem="OWc-Dt-IdC" secondAttribute="centerX" id="uFf-Ts-3ae"/>
+                            <constraint firstItem="OWc-Dt-IdC" firstAttribute="centerY" secondItem="3RZ-Lh-rGf" secondAttribute="centerY" id="yk8-xe-8DI"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="Wlj-Se-7Hx"/>
                     <connections>
-                        <segue destination="49e-Tb-3d3" kind="show" identifier="loginSegue" id="H44-oE-aIs"/>
+                        <segue destination="49e-Tb-3d3" kind="show" identifier="loginSegue" id="r8P-tn-8Ut"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dqS-xB-iO5" userLabel="First Responder" sceneMemberID="firstResponder"/>
