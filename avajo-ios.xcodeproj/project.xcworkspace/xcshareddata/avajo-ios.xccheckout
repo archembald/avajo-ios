@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>A491D7F1-EAC8-4CA0-B56A-C8970A9A7B1F</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>avajo-ios</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>1789805D8887D160E2D19544C58937F020035F0E</key>
 		<string>https://github.com/archembald/avajo-ios.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>avajo-ios.xcodeproj/project.xcworkspace</string>
+	<string>avajo-ios.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>1789805D8887D160E2D19544C58937F020035F0E</key>

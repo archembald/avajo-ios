@@ -8,6 +8,7 @@ class LoginView: UIViewController, FBSDKLoginButtonDelegate {
         
         if (FBSDKAccessToken.currentAccessToken() != nil){
             // User is already logged in, do work such as go to next view controller.
+            goToMainView()
         }else{
             let loginView : FBSDKLoginButton = FBSDKLoginButton()
             self.view.addSubview(loginView)
@@ -41,12 +42,17 @@ class LoginView: UIViewController, FBSDKLoginButtonDelegate {
             if result.grantedPermissions.contains("email")
             {
                 // Do work
+                goToMainView()
             }
         }
     }
     
     func loginButtonDidLogOut(loginButton: FBSDKLoginButton!) {
         println("User Logged Out")
+    }
+    
+    func goToMainView(){
+        performSegueWithIdentifier("loginSegue", sender: self)
     }
     
     func returnUserData()
