@@ -134,10 +134,10 @@
             </objects>
             <point key="canvasLocation" x="750" y="360"/>
         </scene>
-        <!--Login View Controller-->
+        <!--Login View-->
         <scene sceneID="z4L-87-84N">
             <objects>
-                <viewController id="631-zF-eU7" customClass="LoginViewController" sceneMemberID="viewController">
+                <viewController id="631-zF-eU7" customClass="LoginView" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="MGh-IT-PAz"/>
                         <viewControllerLayoutGuide type="bottom" id="rwc-t2-hcx"/>
