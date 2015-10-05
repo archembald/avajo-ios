@@ -13,6 +13,9 @@
 		FA8E25D11BC2D909004D0524 /* user_male_circle.png in Resources */ = {isa = PBXBuildFile; fileRef = FA8E25D01BC2D909004D0524 /* user_male_circle.png */; };
 		FA8E25D51BC2D94D004D0524 /* location.png in Resources */ = {isa = PBXBuildFile; fileRef = FA8E25D41BC2D94D004D0524 /* location.png */; };
 		FA8E25D71BC2D985004D0524 /* speech_bubble.png in Resources */ = {isa = PBXBuildFile; fileRef = FA8E25D61BC2D985004D0524 /* speech_bubble.png */; };
+		FA8E25D91BC2F57B004D0524 /* Hangout.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8E25D81BC2F57B004D0524 /* Hangout.swift */; };
+		FA8E25DC1BC2F617004D0524 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8E25DB1BC2F617004D0524 /* User.swift */; };
+		FA8E25DE1BC2F77D004D0524 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8E25DD1BC2F77D004D0524 /* Location.swift */; };
 		FA8E95B91BC0ADD200875DA4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8E95B81BC0ADD200875DA4 /* AppDelegate.swift */; };
 		FA8E95BB1BC0ADD200875DA4 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8E95BA1BC0ADD200875DA4 /* FirstViewController.swift */; };
 		FA8E95BD1BC0ADD200875DA4 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8E95BC1BC0ADD200875DA4 /* SecondViewController.swift */; };
@@ -48,6 +51,9 @@
 		FA8E25D01BC2D909004D0524 /* user_male_circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user_male_circle.png; sourceTree = "<group>"; };
 		FA8E25D41BC2D94D004D0524 /* location.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = location.png; sourceTree = "<group>"; };
 		FA8E25D61BC2D985004D0524 /* speech_bubble.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = speech_bubble.png; sourceTree = "<group>"; };
+		FA8E25D81BC2F57B004D0524 /* Hangout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hangout.swift; sourceTree = "<group>"; };
+		FA8E25DB1BC2F617004D0524 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		FA8E25DD1BC2F77D004D0524 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		FA8E95B31BC0ADD200875DA4 /* avajo-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "avajo-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA8E95B71BC0ADD200875DA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA8E95B81BC0ADD200875DA4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -116,6 +122,16 @@
 			name = icons;
 			sourceTree = "<group>";
 		};
+		FA8E25DA1BC2F580004D0524 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FA8E25D81BC2F57B004D0524 /* Hangout.swift */,
+				FA8E25DB1BC2F617004D0524 /* User.swift */,
+				FA8E25DD1BC2F77D004D0524 /* Location.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		FA8E95AA1BC0ADD200875DA4 = {
 			isa = PBXGroup;
 			children = (
@@ -139,19 +155,20 @@
 		FA8E95B51BC0ADD200875DA4 /* avajo-ios */ = {
 			isa = PBXGroup;
 			children = (
+				FA5065361BC0EBF300AB1D30 /* BridgingHeader.h */,
+				FA50652F1BC0E58800AB1D30 /* FBSettings.h */,
+				FA5065341BC0E5ED00AB1D30 /* FBSettings.m */,
 				FA8E95B81BC0ADD200875DA4 /* AppDelegate.swift */,
 				FA8E95BA1BC0ADD200875DA4 /* FirstViewController.swift */,
-				FA5065341BC0E5ED00AB1D30 /* FBSettings.m */,
-				FA50652F1BC0E58800AB1D30 /* FBSettings.h */,
-				FA8E25D21BC2D916004D0524 /* assets */,
-				FA8E95BC1BC0ADD200875DA4 /* SecondViewController.swift */,
-				FA8E95BE1BC0ADD200875DA4 /* Main.storyboard */,
-				FA8E95C11BC0ADD200875DA4 /* Images.xcassets */,
-				FA8E95C31BC0ADD200875DA4 /* LaunchScreen.xib */,
-				FA8E95B61BC0ADD200875DA4 /* Supporting Files */,
-				FA5065361BC0EBF300AB1D30 /* BridgingHeader.h */,
 				FA5065371BC0ED0D00AB1D30 /* LoginView.swift */,
 				FADA28131BC2B49100F4DA18 /* ProfileViewController.swift */,
+				FA8E95BC1BC0ADD200875DA4 /* SecondViewController.swift */,
+				FA8E95C11BC0ADD200875DA4 /* Images.xcassets */,
+				FA8E25D21BC2D916004D0524 /* assets */,
+				FA8E95C31BC0ADD200875DA4 /* LaunchScreen.xib */,
+				FA8E95BE1BC0ADD200875DA4 /* Main.storyboard */,
+				FA8E25DA1BC2F580004D0524 /* Model */,
+				FA8E95B61BC0ADD200875DA4 /* Supporting Files */,
 			);
 			path = "avajo-ios";
 			sourceTree = "<group>";
@@ -348,8 +365,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				FADA28141BC2B49100F4DA18 /* ProfileViewController.swift in Sources */,
+				FA8E25D91BC2F57B004D0524 /* Hangout.swift in Sources */,
 				FA8E95BD1BC0ADD200875DA4 /* SecondViewController.swift in Sources */,
 				FA5065351BC0E5ED00AB1D30 /* FBSettings.m in Sources */,
+				FA8E25DE1BC2F77D004D0524 /* Location.swift in Sources */,
+				FA8E25DC1BC2F617004D0524 /* User.swift in Sources */,
 				FA8E95B91BC0ADD200875DA4 /* AppDelegate.swift in Sources */,
 				FA5065381BC0ED0D00AB1D30 /* LoginView.swift in Sources */,
 				FA8E95BB1BC0ADD200875DA4 /* FirstViewController.swift in Sources */,

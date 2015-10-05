@@ -12,7 +12,6 @@ class ProfileViewController: UIViewController {
     
     @IBOutlet var imgProfilePicture: UIImageView!
     @IBOutlet var labelUsername: UILabel!
-    @IBOutlet var labelEmail: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,7 +31,6 @@ class ProfileViewController: UIViewController {
             else
             {
                 self.labelUsername.text = result.valueForKey("name") as? String
-                self.labelEmail.text = result.valueForKey("email") as? String
                 
                 // Set pic
                 let fbid = result.valueForKey("id") as? String

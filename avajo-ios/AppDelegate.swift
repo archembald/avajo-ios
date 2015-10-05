@@ -7,6 +7,10 @@
 //
 
 import UIKit
+import CoreData
+import Meteor
+
+let Meteor = METCoreDataDDPClient(serverURL: NSURL(string: "wss://localhost:3000/websocket")!)
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,6 +19,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        // Initialise meteor
+        Meteor.connect()
+        // Initialise fb
         return FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
     }
     

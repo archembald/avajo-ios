@@ -253,13 +253,6 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kvj-CZ-D8p">
-                                <rect key="frame" x="279" y="297" width="42" height="21"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -270,15 +263,12 @@
                             <constraint firstItem="yhT-fH-7rQ" firstAttribute="leading" secondItem="PLj-l2-6Gp" secondAttribute="leadingMargin" id="FEs-b2-nG3"/>
                             <constraint firstItem="yhT-fH-7rQ" firstAttribute="trailing" secondItem="PLj-l2-6Gp" secondAttribute="trailingMargin" id="MEQ-dq-RkF"/>
                             <constraint firstItem="JNP-oy-dY8" firstAttribute="centerX" secondItem="yhT-fH-7rQ" secondAttribute="centerX" id="UfV-ts-AD0"/>
-                            <constraint firstItem="Kvj-CZ-D8p" firstAttribute="top" secondItem="yhT-fH-7rQ" secondAttribute="bottom" constant="8" symbolic="YES" id="d26-VV-SRf"/>
                             <constraint firstItem="yhT-fH-7rQ" firstAttribute="centerX" secondItem="aha-fl-g9k" secondAttribute="centerX" id="wc1-43-40o"/>
-                            <constraint firstItem="Kvj-CZ-D8p" firstAttribute="centerX" secondItem="yhT-fH-7rQ" secondAttribute="centerX" id="zVc-ee-EMC"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Profile" image="user_male_circle.png" id="EgP-p6-yZx"/>
                     <connections>
                         <outlet property="imgProfilePicture" destination="JNP-oy-dY8" id="j7W-Vg-Phu"/>
-                        <outlet property="labelEmail" destination="Kvj-CZ-D8p" id="9Wb-Ab-72M"/>
                         <outlet property="labelUsername" destination="yhT-fH-7rQ" id="S0p-Fi-PqN"/>
                         <segue destination="DN8-3W-2DS" kind="showDetail" identifier="logoutSegue" id="hg9-3R-fbG"/>
                     </connections>
