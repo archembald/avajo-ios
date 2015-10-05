@@ -20,6 +20,7 @@
 		FA8E95DE1BC0E24600875DA4 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA8E95DB1BC0E24600875DA4 /* FBSDKLoginKit.framework */; };
 		FA8E95DF1BC0E24600875DA4 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA8E95DC1BC0E24600875DA4 /* FBSDKShareKit.framework */; };
 		FAA314831BC1A0DD00915854 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAA314821BC1A0DD00915854 /* Bolts.framework */; };
+		FADA28141BC2B49100F4DA18 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADA28131BC2B49100F4DA18 /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		FA8E95DB1BC0E24600875DA4 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		FA8E95DC1BC0E24600875DA4 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
 		FAA314821BC1A0DD00915854 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		FADA28131BC2B49100F4DA18 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				FA8E95B61BC0ADD200875DA4 /* Supporting Files */,
 				FA5065361BC0EBF300AB1D30 /* BridgingHeader.h */,
 				FA5065371BC0ED0D00AB1D30 /* LoginView.swift */,
+				FADA28131BC2B49100F4DA18 /* ProfileViewController.swift */,
 			);
 			path = "avajo-ios";
 			sourceTree = "<group>";
@@ -249,6 +252,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FADA28141BC2B49100F4DA18 /* ProfileViewController.swift in Sources */,
 				FA8E95BD1BC0ADD200875DA4 /* SecondViewController.swift in Sources */,
 				FA5065351BC0E5ED00AB1D30 /* FBSettings.m in Sources */,
 				FA8E95B91BC0ADD200875DA4 /* AppDelegate.swift in Sources */,
