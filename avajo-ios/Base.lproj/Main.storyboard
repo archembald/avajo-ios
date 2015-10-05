@@ -5,7 +5,7 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--First View Controller-->
+        <!--Nearby-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
                 <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="avajo_ios" customModuleProvider="target" sceneMemberID="viewController">
@@ -61,7 +61,7 @@
                             <constraint firstItem="NqM-n0-Iex" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="top" constant="30" id="qku-Vp-PwU"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="search" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="Nearby" image="location.png" id="acW-dT-cKf"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="600" height="600"/>
                 </viewController>
@@ -69,7 +69,7 @@
             </objects>
             <point key="canvasLocation" x="750" y="-304"/>
         </scene>
-        <!--Second View Controller-->
+        <!--Hangouts-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
                 <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="avajo_ios" customModuleProvider="target" sceneMemberID="viewController">
@@ -127,7 +127,7 @@
                             <constraint firstAttribute="centerY" secondItem="zEq-FU-wV5" secondAttribute="centerY" id="qzY-Ky-pLD"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="history" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="Hangouts" image="speech_bubble.png" id="cPa-gy-q4n"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="600" height="600"/>
                     <connections>
@@ -218,7 +218,7 @@
             </objects>
             <point key="canvasLocation" x="-810" y="0.0"/>
         </scene>
-        <!--Profile View Controller-->
+        <!--Profile-->
         <scene sceneID="9Do-8P-ClY">
             <objects>
                 <viewController id="qnI-Pu-M5q" customClass="ProfileViewController" customModule="avajo_ios" customModuleProvider="target" sceneMemberID="viewController">
@@ -275,7 +275,7 @@
                             <constraint firstItem="Kvj-CZ-D8p" firstAttribute="centerX" secondItem="yhT-fH-7rQ" secondAttribute="centerX" id="zVc-ee-EMC"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="contacts" id="EgP-p6-yZx"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="user_male_circle.png" id="EgP-p6-yZx"/>
                     <connections>
                         <outlet property="imgProfilePicture" destination="JNP-oy-dY8" id="j7W-Vg-Phu"/>
                         <outlet property="labelEmail" destination="Kvj-CZ-D8p" id="9Wb-Ab-72M"/>
@@ -309,5 +309,10 @@
             <point key="canvasLocation" x="0.0" y="0.0"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="location.png" width="25" height="25"/>
+        <image name="speech_bubble.png" width="25" height="25"/>
+        <image name="user_male_circle.png" width="25" height="25"/>
+    </resources>
     <color key="tintColor" red="1" green="0.69931080521736388" blue="0.42592238697573248" alpha="1" colorSpace="calibratedRGB"/>
 </document>
