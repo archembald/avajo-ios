@@ -17,20 +17,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NqM-n0-Iex">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
-                                <animations/>
-                                <items>
-                                    <navigationItem title="Nearby" id="W1c-bs-RV1"/>
-                                </items>
-                            </navigationBar>
                             <searchBar contentMode="redraw" text="" translatesAutoresizingMaskIntoConstraints="NO" id="avO-fI-o2v">
-                                <rect key="frame" x="0.0" y="44" width="600" height="44"/>
+                                <rect key="frame" x="0.0" y="74" width="600" height="44"/>
                                 <animations/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="qrl-R4-mqT">
-                                <rect key="frame" x="0.0" y="88" width="600" height="463"/>
+                                <rect key="frame" x="0.0" y="118" width="600" height="433"/>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
@@ -45,6 +38,13 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NqM-n0-Iex">
+                                <rect key="frame" x="0.0" y="30" width="600" height="44"/>
+                                <animations/>
+                                <items>
+                                    <navigationItem title="Nearby" id="W1c-bs-RV1"/>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -58,7 +58,7 @@
                             <constraint firstAttribute="trailing" secondItem="avO-fI-o2v" secondAttribute="trailing" id="bAU-BU-oxU"/>
                             <constraint firstItem="avO-fI-o2v" firstAttribute="leading" secondItem="NqM-n0-Iex" secondAttribute="leading" id="fgQ-yp-6ff"/>
                             <constraint firstItem="avO-fI-o2v" firstAttribute="trailing" secondItem="qrl-R4-mqT" secondAttribute="trailing" id="is5-5c-xCs"/>
-                            <constraint firstItem="NqM-n0-Iex" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="top" id="qku-Vp-PwU"/>
+                            <constraint firstItem="NqM-n0-Iex" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="top" constant="30" id="qku-Vp-PwU"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="search" id="acW-dT-cKf"/>
@@ -67,7 +67,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750" y="-320"/>
+            <point key="canvasLocation" x="750" y="-304"/>
         </scene>
         <!--Second View Controller-->
         <scene sceneID="wg7-f3-ORb">

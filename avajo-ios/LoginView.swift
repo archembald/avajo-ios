@@ -73,27 +73,5 @@ class LoginView: UIViewController, FBSDKLoginButtonDelegate {
         dispatch_async(dispatch_get_main_queue()) {
             self.performSegueWithIdentifier("logoutSegue", sender: self)
         }
-    }
-    
-    func returnUserData()
-    {
-        let graphRequest : FBSDKGraphRequest = FBSDKGraphRequest(graphPath: "me", parameters: nil)
-        graphRequest.startWithCompletionHandler({ (connection, result, error) -> Void in
-            
-            if ((error) != nil)
-            {
-                // Process error
-                println("Error: \(error)")
-            }
-            else
-            {
-                println("fetched user: \(result)")
-                let userName : NSString = result.valueForKey("name") as! NSString
-                println("User Name is: \(userName)")
-                let userEmail : NSString = result.valueForKey("email") as! NSString
-                println("User Email is: \(userEmail)")
-            }
-        })
-    }
-    
+    }    
 }
