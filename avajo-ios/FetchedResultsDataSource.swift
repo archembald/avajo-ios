@@ -34,16 +34,14 @@ public class FetchedResultsDataSource: NSObject, NSFetchedResultsControllerDeleg
   }
   
   public func performFetch() {
-    var error: NSError?
     do {
       try fetchedResultsController.performFetch()
       reloadData()
       fetchedResultsController.delegate = self
-    } catch let error1 as NSError {
-      error = error1
-      if error != nil {
-        didFailWithError(error!)
-      }
+    } catch let error = NSError {
+        if error != nil {
+            didFailWithError(error!)
+        }
     }
   }
   
@@ -74,31 +72,31 @@ public class FetchedResultsDataSource: NSObject, NSFetchedResultsControllerDeleg
   
   // MARK: - Observing Changes
 
-  enum ChangeDetail: CustomStringConvertible {
-    case SectionInserted(Int)
-    case SectionDeleted(Int)
-    case ObjectInserted(NSIndexPath)
-    case ObjectDeleted(NSIndexPath)
-    case ObjectUpdated(NSIndexPath)
-    case ObjectMoved(indexPath: NSIndexPath, newIndexPath: NSIndexPath)
-    
-    var description: String {
-      switch self {
-      case SectionInserted(let sectionIndex):
-        return "SectionInserted(\(sectionIndex))"
-      case SectionDeleted(let sectionIndex):
-        return "SectionDeleted(\(sectionIndex))"
-      case ObjectInserted(let indexPath):
-        return "ObjectInserted(\(indexPath))"
-      case ObjectDeleted(let indexPath):
-        return "ObjectDeleted(\(indexPath))"
-      case ObjectUpdated(let indexPath):
-        return "ObjectUpdated(\(indexPath))"
-      case let ObjectMoved(indexPath, newIndexPath):
-        return "ObjectMoved(\(indexPath) -> \(newIndexPath))"
-      }
-    }
-  }
+//  enum ChangeDetail: CustomStringConvertible {
+//    case SectionInserted(Int)
+//    case SectionDeleted(Int)
+//    case ObjectInserted(NSIndexPath)
+//    case ObjectDeleted(NSIndexPath)
+//    case ObjectUpdated(NSIndexPath)
+//    case ObjectMoved(indexPath: NSIndexPath, newIndexPath: NSIndexPath)
+//    
+//    var description: String {
+//      switch self {
+//      case SectionInserted(let sectionIndex):
+//        return "SectionInserted(\(sectionIndex))"
+//      case SectionDeleted(let sectionIndex):
+//        return "SectionDeleted(\(sectionIndex))"
+//      case ObjectInserted(let indexPath):
+//        return "ObjectInserted(\(indexPath))"
+//      case ObjectDeleted(let indexPath):
+//        return "ObjectDeleted(\(indexPath))"
+//      case ObjectUpdated(let indexPath):
+//        return "ObjectUpdated(\(indexPath))"
+//      case let ObjectMoved(indexPath, newIndexPath):
+//        return "ObjectMoved(\(indexPath) -> \(newIndexPath))"
+//      }
+//    }
+//  }
   
   private var changes: [ChangeDetail]?
 
@@ -147,9 +145,9 @@ public class FetchedResultsDataSource: NSObject, NSFetchedResultsControllerDeleg
 
   // MARK: - UIDataSourceModelAssociation
   
-  public func modelIdentifierForElementAtIndexPath(indexPath: NSIndexPath, inView view: UIView) -> String? {
+  public func modelIdentifierForElementAtIndexPath(indexPath: NSIndexPath, inView view: UIView) -> String {
     let object = objectAtIndexPath(indexPath)
-    return object.objectID.URIRepresentation().absoluteString
+    return object.objectID.URIRepresentation().absoluteString!
   }
   
   public func indexPathForElementWithModelIdentifier(identifier: String, inView view: UIView) -> NSIndexPath? {
